@@ -1,0 +1,131 @@
+
+.quicksand{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* nav styles */
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    align-items: center;
+  }
+  .logo-container{
+    display: flex;
+    gap: 5px;
+  }
+  .nav-logo{
+    max-width: 62px;
+    max-height: 62px;
+  }
+  .nav-title{
+    color: rgb(17, 17, 17);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  nav div a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 30px;
+    }
+   .navigation{
+    gap: 32px;
+   }
+   .Home{
+    color: rgb(254, 163, 1);
+   }
+   .About{
+    color: rgb(1, 172, 253);
+   }
+   .Facilities{
+    color: rgb(5, 212, 223);
+   }
+   .Admission{
+    color: rgb(93, 88, 239);
+   }
+   .nav-btn{
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 30px;
+    border: none;
+    }
+    .hover, .icon{
+        display: none;
+    }
+    nav li{
+        list-style: none;
+    }
+    nav li a{
+        text-decoration: none;
+        color: black;
+      }
+/* banner styes */
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 140px 0px 140px;
+}
+.banner-title{
+    color: rgba(17, 17, 17, 1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
+}
+.banner-description{
+    color: rgb(17, 17, 17);
+     font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 25px;
+ }
+.banner-btn{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 45px;
+  }
+.banner-img{
+    width: 100%;
+}
+
+
+
+/* style for mobile device */
+@media screen and (max-width:576px) {
+    nav div a{
+        display: none;
+    }
+    .nav-title, .nav-btn{
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+        margin: 20px 20px;
+    } 
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-container{
+        text-align: center;
+    }
+    .banner-img{
+        width: calc(100% - 40px);
+    }
+}
