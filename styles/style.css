@@ -102,7 +102,7 @@
 }
 
 /* main body styles */
-section{
+.Standard{
     margin: 60px 140px 60px 140px;
 }
 .color-1{
@@ -122,12 +122,14 @@ section{
     margin-bottom: 80px;
     text-align: center;
 }
+.Curriculum{
+    background-image: url(../assets/bg.png);
+}
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-    background-image: url(../assets/bg.png);
-  }
+   }
 .card-container-1{
     text-align: center;
     padding: 60px 40px;
@@ -158,7 +160,73 @@ section{
    line-height: 28.3px;
    border: none;
   }
-
+  .main-story-title{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 38.35px;
+    margin-left: 38px;
+   }
+  .story-title{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28.76px;
+    margin-left: 35px;
+   }
+   .main-story-description{
+    color: rgb(102, 102, 102);
+    font-size: 0.80rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    margin-left: 38px;
+    }
+  .stories{
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  }
+  .container{
+    display: flex;
+    gap: 20px;
+      
+  }
+  .container img{
+    width: 100%;
+     border-radius: 16px 16px 0px 0px;
+    background: rgb(217, 217, 217);
+  }
+  .side-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+.story, .main-card{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.green{
+ background: rgb(149, 178, 38);
+}
+.skyblue{
+    background: rgb(60, 216, 232);
+}
+.blue{
+ background: rgb(93, 88, 240);
+}
+.date{
+    color: rgb(255, 255, 255);
+    font-size: 0.80rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    padding: 14px 18px;
+    border-radius: 47.93px;
+    margin-top: -320px;
+    margin: 40px 40px;
+    }
+.center{
+    display: flex;
+    justify-content: center;
+       margin: 0 auto;
+  }
 
 /* style for mobile device */
 @media screen and (max-width:576px) {
@@ -185,10 +253,21 @@ section{
     .banner-img{
         /* width: calc(100% - 40px); */
     }
-    section{
+    .Standard{
         margin: 20px 20px ;
     }
     .cards{
         grid-template-columns: repeat(1, 1fr);
     }
+    .main-card{
+        display: none;
+    }
+    .side-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .date{
+        margin: auto;
+      }
 }
