@@ -5,6 +5,13 @@
     font-weight: 400;
     font-style: normal;
   }
+  
+.raleway{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
   /* nav styles */
@@ -166,10 +173,12 @@
     gap: 5px;
   }
   .arrow > i{
-     height: 60px;
-    width: 60px;
-    border-radius: 30px;
+    color:  rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-size: 600;
+     border-radius: 30px;
     background: rgb(254, 163, 1);
+    padding: 20px;
   }
   .main-story-title{
     color: rgb(0, 0, 0);
@@ -295,6 +304,7 @@
     }
     .icon{
         display: block;
+        font-size: 3rem;
     }
     .banner{
         flex-direction: column-reverse;
@@ -313,6 +323,14 @@
     }
     .Standard{
         padding: 20px 20px ;
+    }
+    .title{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 57.5px;
+    margin-bottom: 50px;
+    text-align: center; 
     }
     .cards{
         grid-template-columns: repeat(1, 1fr);
